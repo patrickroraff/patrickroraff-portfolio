@@ -1,0 +1,2194 @@
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+--- a/.idea/.gitignore	(revision acdbbbce8e548f54f5f23cdcc75d551b1df08fc4)
++++ b/.idea/.gitignore	(date 1681513859975)
+@@ -1,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision acdbbbce8e548f54f5f23cdcc75d551b1df08fc4)
++++ b/.idea/vcs.xml	(date 1681513859519)
+@@ -1,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision acdbbbce8e548f54f5f23cdcc75d551b1df08fc4)
++++ b/.idea/modules.xml	(date 1681513859501)
+@@ -1,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/patrickroraff-portfolio.iml" filepath="$PROJECT_DIR$/.idea/patrickroraff-portfolio.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/patrickroraff-portfolio.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/patrickroraff-portfolio.iml b/.idea/patrickroraff-portfolio.iml
+--- a/.idea/patrickroraff-portfolio.iml	(revision acdbbbce8e548f54f5f23cdcc75d551b1df08fc4)
++++ b/.idea/patrickroraff-portfolio.iml	(date 1681513859444)
+@@ -1,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: index.html
+===================================================================
+diff --git a/index.html b/index.html
+deleted file mode 100644
+--- a/index.html	(revision acdbbbce8e548f54f5f23cdcc75d551b1df08fc4)
++++ /dev/null	(revision acdbbbce8e548f54f5f23cdcc75d551b1df08fc4)
+@@ -1,928 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-
+-<head>
+-  <meta charset="UTF-8">
+-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-  <title>Jack - personal portfolio</title>
+-
+-  <!-- 
+-    - favicon
+-  -->
+-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+-
+-  <!-- 
+-    - custom css link
+-  -->
+-  <link rel="stylesheet" href="./assets/css/style.css">
+-
+-  <!-- 
+-    - google font link
+-  -->
+-  <link rel="preconnect" href="https://fonts.googleapis.com">
+-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+-  <link
+-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+-    rel="stylesheet">
+-</head>
+-
+-<body id="top" class="dark_theme">
+-
+-  <!-- 
+-    - #HEADER
+-  -->
+-
+-  <header class="header" data-header>
+-    <div class="container">
+-
+-      <h1 class="h1 logo">
+-        <a href="#">Jack<span>.</span></a>
+-      </h1>
+-
+-      <div class="navbar-actions">
+-
+-        <select name="language" id="lang">
+-          <option value="en">En</option>
+-          <option value="ar">Ar</option>
+-        </select>
+-
+-        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+-          <span class="icon"></span>
+-        </button>
+-
+-      </div>
+-
+-      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+-        <span class="one"></span>
+-        <span class="two"></span>
+-        <span class="three"></span>
+-      </button>
+-
+-      <nav class="navbar" data-navbar>
+-        <ul class="navbar-list">
+-
+-          <li>
+-            <a href="#home" class="navbar-link">Home.</a>
+-          </li>
+-
+-          <li>
+-            <a href="#about" class="navbar-link">About.</a>
+-          </li>
+-
+-          <li>
+-            <a href="#skills" class="navbar-link">Skills.</a>
+-          </li>
+-
+-          <li>
+-            <a href="#portfolio" class="navbar-link">Portfolio.</a>
+-          </li>
+-
+-          <li>
+-            <a href="#contact" class="navbar-link">Contact.</a>
+-          </li>
+-
+-        </ul>
+-      </nav>
+-
+-    </div>
+-  </header>
+-
+-
+-
+-
+-
+-  <main>
+-    <article class="container">
+-
+-      <!-- 
+-        - #HERO
+-      -->
+-
+-      <section class="hero" id="home">
+-
+-        <figure class="hero-banner">
+-
+-          <picture>
+-            <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)">
+-            <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
+-            <img src="./assets/images/hero-banner-sm.png" alt="A man in a blue shirt with a happy expression"
+-              class="w-100">
+-          </picture>
+-
+-        </figure>
+-
+-        <div class="hero-content">
+-
+-          <h2 class="h2 hero-title">We Design & Build Creative Products</h2>
+-
+-          <a href="#contact" class="btn btn-primary">Get in touch</a>
+-
+-        </div>
+-
+-        <ul class="hero-social-list">
+-
+-          <li>
+-            <a href="#" class="hero-social-link">
+-              <ion-icon name="logo-facebook"></ion-icon>
+-
+-              <div class="tooltip">Facebook</div>
+-            </a>
+-          </li>
+-
+-          <li>
+-            <a href="#" class="hero-social-link">
+-              <ion-icon name="logo-twitter"></ion-icon>
+-
+-              <div class="tooltip">Twitter</div>
+-            </a>
+-          </li>
+-
+-          <li>
+-            <a href="#" class="hero-social-link">
+-              <ion-icon name="logo-linkedin"></ion-icon>
+-
+-              <div class="tooltip">Linkedin</div>
+-            </a>
+-          </li>
+-
+-        </ul>
+-
+-        <a href="#stats" class="scroll-down">Scroll</a>
+-
+-      </section>
+-
+-
+-
+-
+-
+-      <!-- 
+-        - #STATS
+-      -->
+-
+-      <section class="stats" id="stats">
+-        <ul class="stats-list">
+-
+-          <li>
+-            <a href="#" class="stats-card">
+-
+-              <div class="card-icon">
+-                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+-              </div>
+-
+-              <h2 class="h2 card-title">
+-                12+ <strong>Years of Experience</strong>
+-              </h2>
+-
+-              <ion-icon name="chevron-forward-outline"></ion-icon>
+-
+-            </a>
+-          </li>
+-
+-          <li>
+-            <a href="#" class="stats-card">
+-
+-              <div class="card-icon">
+-                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+-              </div>
+-
+-              <h2 class="h2 card-title">
+-                230+ <strong>Completed Projects</strong>
+-              </h2>
+-
+-              <ion-icon name="chevron-forward-outline"></ion-icon>
+-
+-            </a>
+-          </li>
+-
+-          <li>
+-            <a href="#" class="stats-card">
+-
+-              <div class="card-icon">
+-                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+-              </div>
+-
+-              <h2 class="h2 card-title">
+-                95+ <strong>Happy Clients</strong>
+-              </h2>
+-
+-              <ion-icon name="chevron-forward-outline"></ion-icon>
+-
+-            </a>
+-          </li>
+-
+-        </ul>
+-      </section>
+-
+-
+-
+-
+-
+-      <!-- 
+-        - #ABOUT
+-      -->
+-
+-      <section class="about" id="about">
+-
+-        <figure class="about-banner">
+-          <img src="./assets/images/about-banner.png" alt="A man in a alice blue shirt with a thinking expression"
+-            class="w-100">
+-        </figure>
+-
+-        <div class="about-content section-content">
+-
+-          <p class="section-subtitle">About me</p>
+-
+-          <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
+-
+-          <p class="section-text">
+-            Hi! I’m Jack Reacher, and I’m a developer who has passion for building clean web applications with intuitive
+-            functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always
+-            curious about
+-            learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have
+-            worked with
+-            creative teams, which involves daily stand-ups and communications, source control, and project management.
+-          </p>
+-
+-          <div class="btn-group">
+-            <button class="btn btn-secondary">Hire me</button>
+-
+-            <button class="btn btn-primary">Download cv</button>
+-          </div>
+-
+-        </div>
+-
+-      </section>
+-
+-
+-
+-
+-
+-      <!-- 
+-        - #SKILLS
+-      -->
+-
+-      <section class="skills" id="skills">
+-
+-        <div class="skills-content section-content">
+-
+-          <p class="section-subtitle">My skills</p>
+-
+-          <h2 class="h3 section-title">What My Programming Skills Included?</h2>
+-
+-          <p class="section-text">
+-            I develop simple, intuitive and responsive user interface that helps users get things done with less effort
+-            and time
+-            with those technologies.
+-          </p>
+-
+-          <div class="skills-toggle" data-toggle-box>
+-            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+-
+-            <button class="toggle-btn" data-toggle-btn>Tools</button>
+-          </div>
+-
+-        </div>
+-
+-        <div class="skills-box" data-skills-box>
+-
+-          <ul class="skills-list">
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">HTML5</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/html5.png" alt="HTML5 logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">CSS3</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/css3.png" alt="CSS3 logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">JavaScript</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">TypeScript</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/typescript.png" alt="TypeScript logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">jQuery</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/jquery.png" alt="jQuery logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Bootstrap</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Angular</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/angular.png" alt="Angular logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">React</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/react.png" alt="React logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Vue</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/vue.png" alt="Vue logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Firebase</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/firebase.png" alt="Firebase logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">PugJs</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/pugjs.png" alt="PugJs logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">SASS</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/sass.png" alt="SASS logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-          </ul>
+-
+-          <ul class="tools-list">
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Ajax</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/ajax.png" alt="Ajax logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Gulp</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/gulp.png" alt="Gulp logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Webpack</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/webpack.png" alt="Webpack logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Git</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/git.png" alt="Git logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Npm</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/npm.png" alt="Npm logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Command Line</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/command.png" alt="Command Line logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">VS Code</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Trello</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/trello.png" alt="Trello logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">ClickUp</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/clickup.png" alt="ClickUp logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Slack</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/slack.png" alt="Slack logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Photoshop</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/photoshop.png" alt="Photoshop logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-            <li>
+-              <div class="skill-card">
+-                <div class="tooltip">Adobe XD</div>
+-
+-                <div class="card-icon">
+-                  <img src="./assets/images/adobe-xd.png" alt="Adobe XD logo">
+-                </div>
+-              </div>
+-            </li>
+-
+-          </ul>
+-
+-        </div>
+-
+-      </section>
+-
+-
+-
+-
+-
+-      <!-- 
+-        - #PROJECTS
+-      -->
+-
+-      <section class="project" id="portfolio">
+-
+-        <ul class="project-list">
+-
+-          <li>
+-            <div class="project-content section-content">
+-
+-              <p class="section-subtitle">My Works</p>
+-
+-              <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+-
+-              <p class="section-text">
+-                We develop the best quality website that serves for the long-term. Well-documented, clean, easy and
+-                elegant interface
+-                helps any non-technical clients.
+-              </p>
+-
+-            </div>
+-          </li>
+-
+-          <li>
+-            <a href="#" class="project-card">
+-
+-              <figure class="card-banner">
+-                <img src="./assets/images/project-1.png" class="w-100" alt="A macintosh on a yellow background.">
+-              </figure>
+-
+-              <div class="card-content">
+-                <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+-
+-                <time class="publish-date" datetime="2022-04">April 2022</time>
+-              </div>
+-
+-            </a>
+-          </li>
+-
+-          <li>
+-            <a href="#" class="project-card">
+-
+-              <figure class="card-banner">
+-                <img src="./assets/images/project-2.png" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+-              </figure>
+-
+-              <div class="card-content">
+-                <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
+-
+-                <time class="publish-date" datetime="2022-04">April 2022</time>
+-              </div>
+-
+-            </a>
+-          </li>
+-
+-          <li>
+-            <a href="#" class="project-card">
+-
+-              <figure class="card-banner">
+-                <img src="./assets/images/project-3.png" class="w-100"
+-                  alt="A Cassette tape on a mellow apricot background.">
+-              </figure>
+-
+-              <div class="card-content">
+-                <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
+-
+-                <time class="publish-date" datetime="2022-04">April 2022</time>
+-              </div>
+-
+-            </a>
+-          </li>
+-
+-          <li>
+-            <a href="#" class="project-card">
+-
+-              <figure class="card-banner">
+-                <img src="./assets/images/project-4.png" class="w-100"
+-                  alt="Blue digital watch on a dark liver background.">
+-              </figure>
+-
+-              <div class="card-content">
+-                <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
+-
+-                <time class="publish-date" datetime="2022-04">April 2022</time>
+-              </div>
+-
+-            </a>
+-          </li>
+-
+-          <li>
+-            <a href="#" class="project-card">
+-
+-              <figure class="card-banner">
+-                <img src="./assets/images/project-5.png" class="w-100"
+-                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
+-              </figure>
+-
+-              <div class="card-content">
+-                <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
+-
+-                <time class="publish-date" datetime="2022-04">April 2022</time>
+-              </div>
+-
+-            </a>
+-          </li>
+-
+-          <li>
+-            <a href="#" class="project-card">
+-
+-              <figure class="card-banner">
+-                <img src="./assets/images/project-6.png" class="w-100"
+-                  alt="On a yellow background, a digital watch and a glass.">
+-              </figure>
+-
+-              <div class="card-content">
+-                <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+-
+-                <time class="publish-date" datetime="2022-04">April 2022</time>
+-              </div>
+-
+-            </a>
+-          </li>
+-
+-          <li>
+-            <a href="#" class="project-card">
+-
+-              <figure class="card-banner">
+-                <img src="./assets/images/project-7.png" class="w-100"
+-                  alt="A fujifilm instant camera on a dark electric blue background.">
+-              </figure>
+-
+-              <div class="card-content">
+-                <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
+-
+-                <time class="publish-date" datetime="2022-04">April 2022</time>
+-              </div>
+-
+-            </a>
+-          </li>
+-
+-          <li>
+-            <button class="load-more">Load more work</button>
+-          </li>
+-
+-        </ul>
+-
+-      </section>
+-
+-
+-
+-
+-
+-      <!-- 
+-        - #CONTACT
+-      -->
+-
+-      <section class="contact" id="contact">
+-
+-        <div class="contact-content section-content">
+-
+-          <p class="section-subtitle">Contact</p>
+-
+-          <h2 class="h3 section-title">Have You Any Project? Please Drop a Message</h2>
+-
+-          <p class="section-text">
+-            Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+-          </p>
+-
+-          <ul class="contact-list">
+-
+-            <li class="contact-list-item">
+-
+-              <div class="contact-item-icon">
+-                <ion-icon name="location-outline"></ion-icon>
+-              </div>
+-
+-              <div class="wrapper">
+-                <h3 class="h4 contact-item-title">Address:</h3>
+-
+-                <address class="contact-info">
+-                  941 Saqrqorish Road, alandalos, grnata, wa 47122-4194
+-                </address>
+-              </div>
+-
+-            </li>
+-
+-            <li class="contact-list-item">
+-
+-              <div class="contact-item-icon">
+-                <ion-icon name="call-outline"></ion-icon>
+-              </div>
+-
+-              <div class="wrapper">
+-                <h3 class="h4 contact-item-title">Phone:</h3>
+-
+-                <a href="tel:01234567789" class="contact-info">(01) 234 567 789</a>
+-
+-                <a href="tel:09765432200" class="contact-info">(09) 765 432 200</a>
+-              </div>
+-
+-            </li>
+-
+-            <li class="contact-list-item">
+-
+-              <div class="contact-item-icon">
+-                <ion-icon name="mail-outline"></ion-icon>
+-              </div>
+-
+-              <div class="wrapper">
+-                <h3 class="h4 contact-item-title">Email:</h3>
+-
+-                <a href="mailto:info@jack.com" class="contact-info">info@jack.com</a>
+-
+-                <a href="mailto:support@jack.com" class="contact-info">support@jack.com</a>
+-              </div>
+-
+-            </li>
+-
+-            <li>
+-              <ul class="contac-social-list">
+-
+-                <li>
+-                  <a href="#" class="contact-social-link">
+-                    <div class="tooltip">Facebook</div>
+-
+-                    <ion-icon name="logo-facebook"></ion-icon>
+-                  </a>
+-                </li>
+-
+-                <li>
+-                  <a href="#" class="contact-social-link">
+-                    <div class="tooltip">Twitter</div>
+-
+-                    <ion-icon name="logo-twitter"></ion-icon>
+-                  </a>
+-                </li>
+-
+-                <li>
+-                  <a href="#" class="contact-social-link">
+-                    <div class="tooltip">Linkedin</div>
+-
+-                    <ion-icon name="logo-linkedin"></ion-icon>
+-                  </a>
+-                </li>
+-
+-                <li>
+-                  <a href="#" class="contact-social-link">
+-                    <div class="tooltip">Youtube</div>
+-
+-                    <ion-icon name="logo-youtube"></ion-icon>
+-                  </a>
+-                </li>
+-
+-              </ul>
+-            </li>
+-
+-          </ul>
+-
+-        </div>
+-
+-        <form action="" class="contact-form">
+-
+-          <div class="form-wrapper">
+-
+-            <label for="name" class="form-label">Name</label>
+-
+-            <div class="input-wrapper">
+-
+-              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
+-
+-              <ion-icon name="person-circle"></ion-icon>
+-
+-            </div>
+-
+-          </div>
+-
+-          <div class="form-wrapper">
+-
+-            <label for="email" class="form-label">Email</label>
+-
+-            <div class="input-wrapper">
+-
+-              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
+-                class="input-field">
+-
+-              <ion-icon name="mail"></ion-icon>
+-
+-            </div>
+-
+-          </div>
+-
+-          <div class="form-wrapper">
+-
+-            <label for="phone" class="form-label">Phone</label>
+-
+-            <div class="input-wrapper">
+-
+-              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+-
+-              <ion-icon name="call"></ion-icon>
+-
+-            </div>
+-
+-          </div>
+-
+-          <div class="form-wrapper">
+-
+-            <label for="message" class="form-label">Message</label>
+-
+-            <div class="input-wrapper">
+-
+-              <textarea name="message" id="message" required placeholder="Write message..."
+-                class="input-field"></textarea>
+-
+-              <ion-icon name="chatbubbles"></ion-icon>
+-
+-            </div>
+-
+-          </div>
+-
+-          <button type="submit" class="btn btn-primary">Send</button>
+-
+-        </form>
+-
+-      </section>
+-
+-    </article>
+-  </main>
+-
+-
+-
+-
+-
+-  <!-- 
+-    - #FOOTER
+-  -->
+-
+-  <footer class="footer">
+-    <div class="container">
+-
+-      <p class="h1 logo">
+-        <a href="#">
+-          Jack<span>.</span>
+-        </a>
+-      </p>
+-
+-      <p class="copyright">
+-        &copy; 2022 <a href="#">codewithsadee</a>. All rights reserved
+-      </p>
+-
+-    </div>
+-  </footer>
+-
+-
+-
+-
+-
+-  <!-- 
+-    - #GO TO TOP
+-  -->
+-
+-  <a href="#top" class="go-top" data-go-top title="Go to Top">
+-    <ion-icon name="arrow-up"></ion-icon>
+-  </a>
+-
+-
+-
+-
+-
+-  <!-- 
+-    - custom js link
+-  -->
+-  <script src="./assets/js/script.js"></script>
+-
+-  <!-- 
+-    - ionicon link
+-  -->
+-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+-
+-</body>
+-
+-</html>
+\ No newline at end of file
+Index: assets/css/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/css/index.html b/assets/css/index.html
+--- a/assets/css/index.html	(revision acdbbbce8e548f54f5f23cdcc75d551b1df08fc4)
++++ b/assets/css/index.html	(date 1681738352171)
+@@ -1,0 +1,735 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++  <meta charset="UTF-8">
++  <meta http-equiv="X-UA-Compatible" content="IE=edge">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>Patrick Roraff - personal portfolio</title>
++
++  <!-- 
++    - favicon
++  -->
++  <link rel="shortcut icon" href="project-logo1.png" type="image/svg+xml">
++
++  <!-- 
++    - custom css link
++  -->
++  <link rel="stylesheet" href="style.css">
++
++  <!-- 
++    - google font link
++  -->
++  <link rel="preconnect" href="https://fonts.googleapis.com">
++  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
++  <link
++    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
++    rel="stylesheet">
++</head>
++
++<body id="top" class="dark_theme">
++
++  <!-- 
++    - #HEADER
++  -->
++
++  <header class="header" data-header>
++    <pr class="container">
++
++      <h1 class="h1 logo">
++        <a href="#">Patrick Roraff<span>.</span></a>
++      </h1>
++
++      <pr class="navbar-actions">
++
++        <select name="language" id="lang">
++          <option value="en">En</option>
++        </select>
++
++        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
++          <span class="icon"></span>
++        </button>
++
++      </pr>
++
++      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
++      </button>
++
++      <nav class="navbar" data-navbar>
++        <ul class="navbar-list">
++
++          <li>
++            <a href="#home" class="navbar-link">Home.</a>
++          </li>
++
++          <li>
++            <a href="#about" class="navbar-link">About.</a>
++          </li>
++
++          <li>
++            <a href="#skills" class="navbar-link">Skills.</a>
++          </li>
++
++          <li>
++            <a href="#portfolio" class="navbar-link">Portfolio.</a>
++          </li>
++
++          <li>
++            <a href="#contact" class="navbar-link">Contact.</a>
++          </li>
++
++        </ul>
++      </nav>
++
++    </pr>
++  </header>
++
++
++
++
++
++  <main>
++    <article class="container">
++
++      <section class="patrickroraff" id="home">
++
++        <figure class="patrickroraff-banner">
++
++          <picture>
++            <source srcset="../images/patrickroraff.png" media="(min-width: 768px)">
++            <source srcset="../images/patrickroraff-md.png" media="(min-width: 500px)">
++            <img src="../assets/images/patrickroraff-sm.png" alt="Inspiring to be a devloper and change the world."
++                 class="w-100">
++          </picture>
++
++        </figure>
++
++        <pr class="patrickroraff-content">
++
++          <h2 class="h2 patrickroraff-title">We Design & Build Creative Products</h2>
++
++          <a href="#contact" class="btn btn-primary">Get in touch</a>
++
++        </pr>
++
++        <ul class="patrickroraff-social-list">
++
++          <li>
++            <a href="#" class="patrickroraff-social-link">
++              <ion-icon name="logo-instagram"></ion-icon>
++
++              <div class="tooltip"></div>
++            </a>
++          </li>
++
++          <li>
++            <a href="#" class="patrickroraff-social-link">
++              <ion-icon name="logo-linkedin"></ion-icon>
++
++              <pr class="tooltip">Linkedin</pr>
++            </a>
++          </li>
++
++        </ul>
++
++        <a href="#stats" class="scroll-down">Scroll</a>
++
++      </section>
++
++
++
++
++
++      <!-- 
++        - #STATS
++      -->
++
++      <section class="stats" id="stats">
++        <ul class="stats-list">
++
++          <li>
++            <a href="#" class="stats-card">
++
++              <pr class="card-icon">
++                <img src="../images/stats-card_icon-1.png" alt="Badge icon">
++              </pr>
++
++              <h2 class="h2 card-title">
++               Accounting &
++               Software Engineering
++                <strong>College Education</strong>
++
++              </h2>
++
++              <ion-icon name="College Education"></ion-icon>
++
++            </a>
++          </li>
++
++          <li>
++            <a href="#" class="stats-card">
++
++              <pr class="card-icon">
++                <img src="../images/stats-card_icon-2.png" alt="Checkmark icon">
++              </pr>
++
++              <h2 class="h2 card-title">
++                200+ <strong>Semester Units</strong>
++              </h2>
++
++              <ion-icon name="Completed Projects"></ion-icon>
++
++            </a>
++          </li>
++
++          <li>
++            <a href="#" class="stats-card">
++
++              <pr class="card-icon">
++                <img src="../images/stats-card_icon-3.png" alt="Peoples rating icon">
++              </pr>
++
++              <h2 class="h2 card-title">
++                4 year <strong>NCAA Division III Soccer Player</strong>
++              </h2>
++
++              <ion-icon name="chevron-forward-outline"></ion-icon>
++
++            </a>
++          </li>
++
++        </ul>
++      </section>
++
++
++
++
++
++      <!-- 
++        - #ABOUT
++      -->
++
++      <section class="about" id="about">
++
++        <figure class="about-banner">
++          <img src="../images/Patrick%20Profile%20Picture.png" alt="Passion to design and think outside the box"
++               class="w-100">
++        </figure>
++
++        <pr class="about-content section-content">
++
++          <p class="section-subtitle">About me</p>
++
++          <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
++
++          <p class="section-text">
++            Hi! I’m Patrick Roraff, and I’m a developer who has passion for building clean web applications with intuitive functionalities.
++            I enjoy the process of turning ideas into reality using creative solutions.
++            I’m always curious about learning new skills, tools, and concepts.
++            In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.
++          </p>
++
++          <pr class="btn-group">
++            <button class="btn btn-secondary">Hire me</button>
++
++            <button class="btn btn-primary">Download cv</button>
++          </pr>
++
++        </pr>
++
++      </section>
++
++
++
++
++
++      <!-- 
++        - #SKILLS
++      -->
++
++      <section class="skills" id="skills">
++
++        <pr class="skills-content section-content">
++
++          <p class="section-subtitle">My skills</p>
++
++          <h2 class="h3 section-title">What My Programming Skills Included?</h2>
++
++          <p class="section-text">
++            I develop simple, intuitive and responsive user interface that helps users get things done with less effort
++            and time
++            with those technologies.
++          </p>
++
++          <pr class="skills-toggle" data-toggle-box>
++            <button class="toggle-btn active" data-toggle-btn>Skills</button>
++
++            <button class="toggle-btn" data-toggle-btn>Tools</button>
++          </pr>
++
++        </pr>
++
++        <pr class="skills-box" data-skills-box>
++
++          <ul class="skills-list">
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">HTML5</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/html5.png" alt="HTML5 logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">CSS3</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/css3.png" alt="CSS3 logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">JavaScript</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/javascript.png" alt="JavaScript logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">TypeScript</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/typescript.png" alt="TypeScript logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">jQuery</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/jquery.png" alt="jQuery logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">Angular</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/angular.png" alt="Angular logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">React</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/react.png" alt="React logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">Vue</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/vue.png" alt="Vue logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">Firebase</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/firebase.png" alt="Firebase logo">
++                </pr>
++              </pr>
++            </li>
++
++
++          </ul>
++
++          <ul class="tools-list">
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">Webpack</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/webpack.png" alt="Webpack logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">Git</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/git.png" alt="Git logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">Npm</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/npm.png" alt="Npm logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">VS Code</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/vs-code.png" alt="VS Code logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">Trello</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/trello.png" alt="Trello logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">Slack</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/slack.png" alt="Slack logo">
++                </pr>
++              </pr>
++            </li>
++
++            <li>
++              <pr class="skill-card">
++                <pr class="tooltip">Photoshop</pr>
++
++                <pr class="card-icon">
++                  <img src="../images/photoshop.png" alt="Photoshop logo">
++                </pr>
++              </pr>
++            </li>
++
++          </ul>
++
++        </pr>
++
++      </section>
++
++
++
++
++
++      <!-- 
++        - #PROJECTS
++      -->
++
++      <section class="project" id="portfolio">
++
++        <ul class="project-list">
++
++          <li>
++            <pr class="project-content section-content">
++
++              <p class="section-subtitle">My Works</p>
++
++              <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
++
++              <p class="section-text">
++                I have worked on some amazing projects throughout my engineering career so far, most notable NoteGPT.
++                I love Engineering and have a passion for Software Engineering in specific. It's my life ambition and so
++                blessed to pursue my dream.
++              </p>
++
++            </pr>
++          </li>
++
++          <li>
++            <a href="#" class="project-card">
++
++              <figure class="card-banner">
++                <img src="../images/project-logo.png" class="w-100" alt="Company logo.">
++              </figure>
++
++              <pr class="card-content">
++                <h3 class="h4 card-title">PatrickRoraff.LLC</h3>
++
++                <time class="publish-date" datetime="2023-04">April 2023</time>
++              </pr>
++
++            </a>
++          </li>
++
++          <li>
++            <a href="#" class="project-card">
++
++              <figure class="card-banner">
++                <img src="../images/noteslogo.png" class="w-100" alt="Junior Capstone Project.">
++              </figure>
++
++              <pr class="card-content">
++                <h3 class="h4 card-title">Junior Capstone Project</h3>
++
++                <time class="publish-date" datetime="2023-04">April 2023</time>
++              </pr>
++
++            </a>
++          </li>
++
++          <li>
++            <button class="load-more">Load more work</button>
++          </li>
++
++        </ul>
++
++      </section>
++
++
++
++
++
++      <!-- 
++        - #CONTACT
++      -->
++
++      <section class="contact" id="contact">
++
++        <pr class="contact-content section-content">
++
++          <p class="section-subtitle">Contact</p>
++
++          <h2 class="h3 section-title">Have You Any Project? Please Drop a Message</h2>
++
++          <p class="section-text">
++            Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
++          </p>
++
++          <ul class="contact-list">
++
++            <li class="contact-list-item">
++
++              <pr class="contact-item-icon">
++                <ion-icon name="location-outline"></ion-icon>
++              </pr>
++
++              <pr class="wrapper">
++                <h3 class="h4 contact-item-title">Address:</h3>
++
++                <address class="contact-info">
++                  12743 4TH ST
++                  Yucaipa
++                  CA, 92346
++                </address>
++              </pr>
++
++            </li>
++
++            <li class="contact-list-item">
++
++              <pr class="contact-item-icon">
++                <ion-icon name="call-outline"></ion-icon>
++              </pr>
++
++              <pr class="wrapper">
++                <h3 class="h4 contact-item-title">Phone:</h3>
++
++                <a href="tel:9097251829" class="contact-info">(909) 725 1829</a>
++
++            </li>
++
++            <li class="contact-list-item">
++
++              <pr class="contact-item-icon">
++                <ion-icon name="mail-outline"></ion-icon>
++              </pr>
++
++              <pr class="wrapper">
++                <h3 class="h4 contact-item-title">Email:</h3>
++
++                <a href="mailto:info@patrickroraff.com" class="contact-info">info@patrickroraff.com</a>
++
++                <a href="mailto:support@patrickroraff.com" class="contact-info">support@patrickroraff.com</a>
++              </pr>
++
++            </li>
++
++            <li>
++              <ul class="contac-social-list">
++
++                <li>
++                  <a href="#" class="contact-social-link">
++                    <div class="tooltip">Instagram</div>
++
++                    <ion-icon name="logo-instagram"></ion-icon>
++                  </a>
++                </li>
++
++                <li>
++                  <a href="#" class="contact-social-link">
++                    <div class="tooltip">Linkedin</div>
++
++                    <ion-icon name="logo-linkedin"></ion-icon>
++                  </a>
++                </li>
++
++                <li>
++                  <a href="#" class="contact-social-link">
++                    <div class="tooltip">Youtube</div>
++
++                    <ion-icon name="logo-youtube"></ion-icon>
++                  </a>
++                </li>
++
++              </ul>
++            </li>
++
++          </ul>
++
++        </pr>
++
++        <form action="" class="contact-form">
++
++          <pr class="form-wrapper">
++
++            <label for="name" class="form-label">Name</label>
++
++            <pr class="input-wrapper">
++
++              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
++
++              <ion-icon name="person-circle"></ion-icon>
++
++            </pr>
++
++          </pr>
++
++          <pr class="form-wrapper">
++
++            <label for="email" class="form-label">Email</label>
++
++            <pr class="input-wrapper">
++
++              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
++                class="input-field">
++
++              <ion-icon name="mail"></ion-icon>
++
++            </pr>
++
++          </pr>
++
++          <pr class="form-wrapper">
++
++            <label for="phone" class="form-label">Phone</label>
++
++            <pr class="input-wrapper">
++
++              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
++
++              <ion-icon name="call"></ion-icon>
++
++            </pr>
++
++          </pr>
++
++          <pr class="form-wrapper">
++
++            <label for="message" class="form-label">Message</label>
++
++            <pr class="input-wrapper">
++
++              <textarea name="message" id="message" required placeholder="Write message..."
++                class="input-field"></textarea>
++
++              <ion-icon name="chatbubbles"></ion-icon>
++
++            </pr>
++
++          </pr>
++
++          <button type="submit" class="btn btn-primary">Send</button>
++
++        </form>
++
++      </section>
++
++    </article>
++  </main>
++
++
++
++
++
++  <!-- 
++    - #FOOTER
++  -->
++
++  <footer class="footer">
++    <pr class="container">
++
++      <p class="h1 logo">
++        <a href="#">
++          Patrick Roraff<span>.</span>
++        </a>
++      </p>
++    </pr>
++  </footer>
++
++
++
++
++
++  <!-- 
++    - #GO TO TOP
++  -->
++
++  <a href="#top" class="go-top" data-go-top title="Go to Top">
++    <ion-icon name="arrow-up"></ion-icon>
++  </a>
++
++
++
++
++
++  <!-- 
++    - custom js link
++  -->
++  <script src="../js/script.js"></script>
++
++  <!-- 
++    - ionicon link
++  -->
++  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
++  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
++
++</body>
++
++</html>
+\ No newline at end of file
+Index: assets/css/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*-----------------------------------*\\\r\n * style.css\r\n\\*-----------------------------------*/\r\n\r\n/**\r\n * copyright 2022 codewithsadee\r\n */\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #CUSTOM PROPERTY\r\n\\*-----------------------------------*/\r\n\r\n:root {\r\n\r\n  /**\r\n   * colors\r\n   */\r\n\r\n  --raw-seinna: hsl(24, 74%, 58%);\r\n  --sizzling-sunrise: hsl(51, 95%, 54%);\r\n  --scarlet: hsl(13, 96%, 47%);\r\n  --black: hsl(0, 0%, 0%);\r\n  --white: hsl(0, 0%, 100%);\r\n\r\n  /**\r\n   * typography\r\n   */\r\n\r\n  --ff-saira-stencil-one: \"Saira Stencil One\", sans-serif; \r\n  --ff-poppins: 'Poppins', sans-serif;\r\n  --ff-roboto: 'Roboto', sans-serif;\r\n\r\n  --fs-1: 2rem;\r\n  --fs-2: calc(1.813rem + 1vw);\r\n  --fs-3: calc(1.313rem + 1vw);\r\n  --fs-4: 1.4rem;\r\n  --fs-5: 1rem;\r\n  --fs-6: 0.813rem;\r\n  --fs-7: 0.75rem;\r\n\r\n  --fw-400: 400;\r\n  --fw-700: 700;\r\n\r\n  /**\r\n   * transition\r\n   */\r\n\r\n  --transition-1: 0.25s ease-in-out;\r\n\r\n  /**\r\n   * spacing\r\n   */\r\n\r\n  --section-padding: 80px;\r\n\r\n  /**\r\n   * radius\r\n   */\r\n\r\n  --radius-4: 4px;\r\n  --radius-12: 12px;\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #THEME COLORS\r\n\\*-----------------------------------*/\r\n\r\nbody.dark_theme {\r\n\r\n  --bg-primary: hsl(0, 0%, 12%);\r\n  --bg-secondary: hsl(0, 0%, 19%);\r\n  --color-primary: hsl(0, 0%, 100%);\r\n  --color-secondary: hsl(0, 0%, 62%);\r\n  --card-shadow: hsla(0, 0%, 0%, 0.4);\r\n  --input-bg: hsl(0, 0%, 16%);\r\n\r\n  --shadow-1: 10px 10px 40px var(--card-shadow);\r\n\r\n}\r\n\r\nbody.light_theme {\r\n\r\n  --bg-primary: hsl(0, 0%, 90%);\r\n  --bg-secondary: hsl(0, 0%, 100%);\r\n  --color-primary: hsl(0, 0%, 12%);\r\n  --color-secondary: hsl(0, 0%, 37%);\r\n  --card-shadow: hsla(0, 0%, 0%, 0.1);\r\n  --input-bg: hsl(0, 0%, 93%);\r\n\r\n  --shadow-1: 10px 10px 40px var(--card-shadow);\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #RESET\r\n\\*-----------------------------------*/\r\n\r\n*, *::before, *::after {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nli { list-style: none; }\r\n\r\na { text-decoration: none; }\r\n\r\na,\r\nimg,\r\ntime,\r\nspan,\r\ninput,\r\nlabel,\r\nselect,\r\nbutton,\r\ntextarea,\r\nion-icon { display: block; }\r\n\r\ninput,\r\nbutton,\r\nselect,\r\ntextarea {\r\n  background: none;\r\n  border: none;\r\n  font: inherit;\r\n}\r\n\r\nbutton,\r\nselect { cursor: pointer; }\r\n\r\ninput,\r\ntextarea { width: 100%; }\r\n\r\nion-icon { pointer-events: none; }\r\n\r\n:is(a, button, select) {\r\n  outline-color: var(--scarlet);\r\n  outline-offset: 3px;\r\n}\r\n\r\n::selection {\r\n  background: var(--color-primary);\r\n  color: var(--bg-primary);\r\n}\r\n\r\nhtml {\r\n  font-family: var(--ff-roboto);\r\n  scroll-behavior: smooth;\r\n}\r\n\r\nbody {\r\n  background: var(--bg-primary);\r\n  transition: var(--transition-1);\r\n}\r\n\r\nbody.active { overflow: hidden; }\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #REUSED STYLE\r\n\\*-----------------------------------*/\r\n\r\n.container { padding-inline: 10px; }\r\n\r\n.h1 {\r\n  font-size: var(--fs-1);\r\n  line-height: 1.2;\r\n  font-weight: 400;\r\n}\r\n\r\n.h2,\r\n.h3,\r\n.h4 {\r\n  color: var(--color-primary);\r\n  font-family: var(--ff-poppins);\r\n  line-height: 1.2;\r\n}\r\n\r\n.h2 { font-size: var(--fs-2); }\r\n\r\n.h3 { font-size: var(--fs-3); }\r\n\r\n.h4 { font-size: var(--fs-5); }\r\n\r\n.w-100 { width: 100%; }\r\n\r\n.btn {\r\n  max-width: max-content;\r\n  color: var(--color-primary);\r\n  font-weight: var(--fw-700);\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.5px;\r\n  padding: 10px 25px;\r\n  border: 1px solid transparent;\r\n  border-radius: var(--radius-4);\r\n  transition: var(--transition-1);\r\n}\r\n\r\n.btn-primary { border-color: var(--color-primary); }\r\n\r\n.btn-primary:is(:hover, :focus) {\r\n  background: var(--color-primary);\r\n  color: var(--bg-primary);\r\n}\r\n\r\n.btn-secondary {\r\n  background: var(--raw-seinna);\r\n  border-color: var(--raw-seinna);\r\n  color: var(--black);\r\n}\r\n\r\n.btn-secondary:is(:hover, :focus) { --raw-seinna: hsl(24, 74%, 64%); }\r\n\r\n.section-subtitle {\r\n  position: relative;\r\n  color: var(--color-secondary);\r\n  text-transform: uppercase;\r\n  padding-bottom: 5px;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.section-subtitle::after {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 100%;\r\n  left: 0;\r\n  width: 60px;\r\n  height: 2px;\r\n  background: var(--color-secondary);\r\n}\r\n\r\n.section-title {\r\n  max-width: 350px;\r\n  margin-bottom: 30px;\r\n}\r\n\r\n.section-text {\r\n  color: var(--color-secondary);\r\n  line-height: 1.8;\r\n  margin-bottom: 30px;\r\n}\r\n\r\n.tooltip {\r\n  position: absolute;\r\n  top: -40px;\r\n  background: var(--raw-seinna);\r\n  min-width: max-content;\r\n  color: var(--white);\r\n  font-size: 15px;\r\n  font-weight: var(--fw-700);\r\n  padding: 5px 10px;\r\n  border-radius: var(--radius-4);\r\n  box-shadow: var(--shadow-1);\r\n  transform: translateY(-10px);\r\n  opacity: 0;\r\n  pointer-events: none;\r\n  transition: var(--transition-1);\r\n  z-index: 1;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #HEADER\r\n\\*-----------------------------------*/\r\n\r\n.header {\r\n  padding-block: 15px;\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  transition: var(--transition-1);\r\n  z-index: 4;\r\n}\r\n\r\n.header.active {\r\n  padding-block: 12px;\r\n  background: var(--bg-secondary);\r\n  box-shadow: var(--shadow-1);\r\n}\r\n\r\n.header .container {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  gap: 10px;\r\n}\r\n\r\n.logo {\r\n  position: relative;\r\n  min-width: 77px;\r\n  z-index: 2;\r\n}\r\n\r\n.logo a {\r\n  color: var(--color-primary);\r\n  font-family: var(--ff-saira-stencil-one);\r\n}\r\n\r\n.logo span {\r\n  display: inline-block;\r\n  color: var(--raw-seinna);\r\n  margin-left: 2px;\r\n}\r\n\r\n.navbar-actions {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 15px;\r\n  margin-left: auto;\r\n}\r\n\r\n.navbar-actions select {\r\n  color: var(--color-primary);\r\n  width: 45px;\r\n}\r\n\r\n.navbar-actions option {\r\n  background: var(--bg-primary);\r\n  color: var(--color-primary);\r\n}\r\n\r\n.theme-btn {\r\n  padding: 4px;\r\n  width: 48px;\r\n  background: var(--bg-secondary);\r\n  border-radius: 100px;\r\n  transition: var(--transition-1);\r\n}\r\n\r\n.header.active .theme-btn { background: var(--bg-primary); }\r\n\r\n.theme-btn .icon {\r\n  position: relative;\r\n  left: 0;\r\n  width: 20px;\r\n  height: 20px;\r\n  border-radius: 50px;\r\n  box-shadow: inset 9px -6px var(--color-primary);\r\n  transition: var(--transition-1);\r\n}\r\n\r\n.theme-btn.active .icon {\r\n  left: 20px;\r\n  box-shadow: inset 20px -20px var(--sizzling-sunrise);\r\n}\r\n\r\n.nav-toggle-btn {\r\n  position: relative;\r\n  transform: rotate(-55deg);\r\n  transition: var(--transition-1);\r\n  z-index: 2;\r\n}\r\n\r\n.nav-toggle-btn.active { transform: rotate(-45deg); }\r\n\r\n.nav-toggle-btn span {\r\n  width: 20px;\r\n  height: 2px;\r\n  background: var(--color-primary);\r\n  margin: 5px;\r\n  transition: var(--transition-1);\r\n}\r\n\r\n.nav-toggle-btn :is(.one, .three) { width: 10px; }\r\n\r\n.nav-toggle-btn .one {\r\n  margin-left: auto;\r\n  transform-origin: left;\r\n}\r\n\r\n.nav-toggle-btn .three { transform-origin: right; }\r\n\r\n.nav-toggle-btn.active .one { transform: rotate(90deg) translateX(-3px); }\r\n\r\n.nav-toggle-btn.active .three { transform: rotate(90deg) translateX(3px); }\r\n\r\n.navbar {\r\n  position: fixed;\r\n  background: var(--bg-secondary);\r\n  top: 100%;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  display: grid;\r\n  place-items: center;\r\n  visibility: hidden;\r\n  transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);\r\n  transition-delay: 0.5s;\r\n  z-index: 1;\r\n}\r\n\r\n.navbar.active {\r\n  top: 0;\r\n  visibility: visible;\r\n  transition-delay: 0s;\r\n}\r\n\r\n.navbar-list > li {\r\n  margin-block: 20px;\r\n  padding-inline: 50px;\r\n  overflow: hidden;\r\n}\r\n\r\n.navbar-link {\r\n  position: relative;\r\n  width: max-content;\r\n  margin-inline: auto;\r\n  color: var(--color-primary);\r\n  font-family: var(--ff-poppins);\r\n  font-size: var(--fs-1);\r\n  padding: 10px;\r\n  transform: translateY(50px);\r\n  transition: 0.75s cubic-bezier(0.68, -0.55, 0.27, 2);\r\n}\r\n\r\n.navbar.active .navbar-link {\r\n  transform: translateY(0);\r\n  transition-delay: 0.5s;\r\n}\r\n\r\n.navbar-link::before {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 50%;\r\n  transform: translateY(-50%);\r\n  left: 0;\r\n  height: 5px;\r\n  width: 0;\r\n  background: var(--raw-seinna);\r\n  transition: var(--transition-1);\r\n}\r\n\r\n.navbar-link:is(:hover, :focus)::before { width: 100%; }\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #HERO\r\n\\*-----------------------------------*/\r\n\r\nmain { overflow-x: hidden; }\r\n\r\n.hero {\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  padding-top: 115px;\r\n  margin-bottom: var(--section-padding);\r\n}\r\n\r\n.hero-banner {\r\n  max-width: 500px;\r\n  width: 125%;\r\n  margin-bottom: 30px;\r\n}\r\n\r\n:is(.hero-social-list, .scroll-down) { display: none; }\r\n\r\n.hero-content { max-width: 450px; }\r\n\r\n.hero-title {\r\n  text-align: center;\r\n  margin-bottom: 30px;\r\n}\r\n\r\n.hero .btn-primary { margin-inline: auto; }\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #STATS\r\n\\*-----------------------------------*/\r\n\r\n.stats { padding-block: var(--section-padding); }\r\n\r\n.stats-list {\r\n  display: grid;\r\n  gap: 30px;\r\n}\r\n\r\n.stats-card {\r\n  background: var(--bg-secondary);\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  padding: 25px;\r\n  border-radius: var(--radius-12);\r\n  box-shadow: var(--shadow-1);\r\n  transition: var(--transition-1);\r\n}\r\n\r\n.stats-card:is(:hover, :focus) { transform: translateY(-5px); }\r\n\r\n.stats-card .card-icon {\r\n  background: var(--raw-seinna);\r\n  width: 60px;\r\n  height: 60px;\r\n  display: grid;\r\n  place-items: center;\r\n  border-radius: 50%;\r\n}\r\n\r\n.stats-card .card-icon img {\r\n  width: 70%;\r\n  filter: invert(1);\r\n}\r\n\r\n.stats-card .card-title {\r\n  width: calc(100% - 95px);\r\n  color: var(--raw-seinna);\r\n  text-align: center;\r\n}\r\n\r\n.stats-card .card-title strong {\r\n  display: block;\r\n  color: var(--color-primary);\r\n  font-size: initial;\r\n  line-height: 1.3;\r\n  margin-top: 5px;\r\n}\r\n\r\n.stats-card > ion-icon { color: var(--color-secondary); }\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #ABOUT\r\n\\*-----------------------------------*/\r\n\r\n.about { padding-block: var(--section-padding); }\r\n\r\n.about-banner {\r\n  max-width: 400px;\r\n  margin-inline: auto;\r\n  margin-bottom: 80px;\r\n}\r\n\r\n.about .btn {\r\n  max-width: unset;\r\n  width: 100%;\r\n}\r\n\r\n.about .btn-secondary { margin-bottom: 10px; }\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #SKILLS\r\n\\*-----------------------------------*/\r\n\r\n.skills { padding-block: var(--section-padding); }\r\n\r\n.skills-content { margin-bottom: 50px; }\r\n\r\n.skills-toggle {\r\n  background: var(--bg-secondary);\r\n  position: relative;\r\n  width: max-content;\r\n  margin-inline: auto;\r\n  display: flex;\r\n  align-items: center;\r\n  padding: 5px;\r\n  border-radius: 100px;\r\n  box-shadow: var(--shadow-1);\r\n  z-index: 1;\r\n}\r\n\r\n.skills-toggle::before {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 5px;\r\n  left: 5px;\r\n  bottom: 5px;\r\n  width: 93px;\r\n  background: var(--raw-seinna);\r\n  border-radius: 100px;\r\n  transition: var(--transition-1);\r\n  z-index: -1;\r\n}\r\n\r\n.skills-toggle.active::before {\r\n  left: 98px;\r\n  width: 94px;\r\n}\r\n\r\n.toggle-btn {\r\n  color: var(--color-primary);\r\n  font-family: var(--ff-poppins);\r\n  padding: 5px 25px;\r\n  transition: var(--transition-1);\r\n}\r\n\r\n.toggle-btn.active { color: var(--white); }\r\n\r\n.skills-box.active .skills-list,\r\n.skills-box .tools-list { display: none; }\r\n\r\n.skills-box .skills-list,\r\n.skills-box.active .tools-list {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n  gap: 15px;\r\n  animation: fadeIn 0.5s ease-out forwards;\r\n}\r\n\r\n@keyframes fadeIn {\r\n\r\n  0% { opacity: 0; }\r\n  100% { opacity: 1; }\r\n\r\n}\r\n\r\n.skill-card {\r\n  position: relative;\r\n  background: var(--bg-secondary);\r\n  width: 80px;\r\n  height: 80px;\r\n  display: grid;\r\n  place-items: center;\r\n  border-radius: var(--radius-12);\r\n  box-shadow: var(--shadow-1);\r\n  cursor: help;\r\n}\r\n\r\n.skill-card:hover .tooltip {\r\n  transform: translateY(0);\r\n  opacity: 1;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #PROJECT\r\n\\*-----------------------------------*/\r\n\r\n.project { padding-block: var(--section-padding); }\r\n\r\n.project-list > li { margin-bottom: 25px; }\r\n\r\n.project-card {\r\n  position: relative;\r\n  overflow: hidden;\r\n  border-radius: var(--radius-12);\r\n  box-shadow: 2px 4px 6px hsla(0, 0%, 0%, 0.2);\r\n}\r\n\r\n.project-card::after {\r\n  content: \"\";\r\n  position: absolute;\r\n  inset: 0;\r\n  border-radius: inherit;\r\n  transition: var(--transition-1);\r\n}\r\n\r\n.project-card:is(:hover, :focus)::after {\r\n  background: hsla(0, 0%, 100%, 0.1);\r\n  backdrop-filter: blur(0.5px);\r\n}\r\n\r\n.project-card .card-content {\r\n  position: absolute;\r\n  bottom: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  padding: 20px;\r\n}\r\n\r\n.project-card .card-title { margin-bottom: 10px; }\r\n\r\n.project-card :is(.card-title, .publish-date) {\r\n  background: var(--bg-primary);\r\n  padding: 6px 12px;\r\n  width: max-content;\r\n  box-shadow: var(--shadow-1);\r\n  transform: translateY(20px);\r\n  opacity: 0;\r\n  transition: var(--transition-1);\r\n}\r\n\r\n.project-card .publish-date {\r\n  font-size: var(--fs-6);\r\n  color: var(--color-primary);\r\n  transition-delay: 0s;\r\n}\r\n\r\n.project-card:is(:hover, :focus) :is(.card-title, .publish-date) {\r\n  transform: translateY(0);\r\n  opacity: 1;\r\n}\r\n\r\n.project-card:is(:hover, :focus) .publish-date { transition-delay: 0.1s; }\r\n\r\n.load-more {\r\n  font-size: var(--fs-4);\r\n  color: var(--raw-seinna);\r\n  text-decoration: underline;\r\n  margin-inline: auto;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #CONTACT\r\n\\*-----------------------------------*/\r\n\r\n.contact { padding-block: var(--section-padding); }\r\n\r\n.contact-content { margin-bottom: 50px; }\r\n\r\n.contact-list-item {\r\n  display: flex;\r\n  align-items: flex-start;\r\n  gap: 15px;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.contact-item-icon {\r\n  font-size: 25px;\r\n  color: var(--color-primary);\r\n}\r\n\r\n.contact-item-icon ion-icon { --ionicon-stroke-width: 40px; }\r\n\r\n.contact-item-title { margin-bottom: 10px; }\r\n\r\n.contact-list-item .contact-info {\r\n  color: var(--color-secondary);\r\n  font-style: normal;\r\n  line-height: 1.6;\r\n  transition: var(--transition-1);\r\n}\r\n\r\n.contact-info:not(address):is(:hover, :focus) { color: var(--color-primary); }\r\n\r\n.contac-social-list {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n  gap: 15px;\r\n  padding-inline: 40px;\r\n}\r\n\r\n.contact-social-link {\r\n  position: relative;\r\n  background: var(--color-primary);\r\n  color: var(--bg-primary);\r\n  width: 35px;\r\n  height: 35px;\r\n  display: grid;\r\n  place-items: center;\r\n  border-radius: 50%;\r\n  transition: var(--transition-1);\r\n}\r\n\r\n.contact-social-link:is(:hover, :focus) {\r\n  background: var(--raw-seinna);\r\n  color: var(--white);\r\n}\r\n\r\n.contact-social-link:is(:hover, :focus) .tooltip {\r\n  transform: translateY(0);\r\n  opacity: 1;\r\n}\r\n\r\n.contact-form {\r\n  background: var(--bg-secondary);\r\n  padding: 20px;\r\n  border-radius: var(--radius-12);\r\n  box-shadow: var(--shadow-1);\r\n}\r\n\r\n.form-wrapper { margin-bottom: 25px; }\r\n\r\n.form-label {\r\n  color: var(--color-primary);\r\n  font-size: var(--fs-7);\r\n  font-family: var(--ff-poppins);\r\n  margin-bottom: 8px;\r\n  margin-left: 5px;\r\n}\r\n\r\n.input-wrapper { position: relative; }\r\n\r\n.input-field {\r\n  background: var(--input-bg);\r\n  color: var(--raw-seinna);\r\n  padding: 10px;\r\n  padding-left: 40px;\r\n  border-radius: var(--radius-12);\r\n  transition: var(--transition-1);\r\n}\r\n\r\n.input-wrapper ion-icon {\r\n  position: absolute;\r\n  top: 10px;\r\n  left: 10px;\r\n  color: var(--color-secondary);\r\n  font-size: 20px;\r\n  transition: var(--transition-1);\r\n}\r\n\r\ntextarea.input-field {\r\n  min-height: 60px;\r\n  height: 120px;\r\n  max-height: 200px;\r\n  resize: vertical;\r\n}\r\n\r\n.input-field:focus { outline: 1px solid; }\r\n\r\n.input-field:focus + ion-icon { color: var(--raw-seinna); }\r\n\r\n.contact .btn-primary {\r\n  max-width: unset;\r\n  width: 100%;\r\n  background: var(--color-primary);\r\n  color: var(--bg-primary);\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #FOOTER\r\n\\*-----------------------------------*/\r\n\r\n.footer {\r\n  background: var(--bg-secondary);\r\n  padding-block: 20px;\r\n  text-align: center;\r\n  box-shadow: var(--shadow-1);\r\n}\r\n\r\n.footer .logo { margin-bottom: 15px; }\r\n\r\n.copyright {\r\n  color: var(--color-secondary);\r\n  line-height: 1.6;\r\n}\r\n\r\n.copyright a {\r\n  display: inline-block;\r\n  color: var(--raw-seinna);\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #GO TO TOP\r\n\\*-----------------------------------*/\r\n\r\n.go-top {\r\n  position: fixed;\r\n  bottom: 25px;\r\n  right: 25px;\r\n  width: 45px;\r\n  height: 45px;\r\n  display: grid;\r\n  place-items: center;\r\n  font-size: 20px;\r\n  color: var(--color-primary);\r\n  border: 2px solid var(--color-primary);\r\n  border-radius: 50%;\r\n  opacity: 0;\r\n  pointer-events: none;\r\n  transform: translateY(10px);\r\n  transition: var(--transition-1);\r\n  z-index: 2;\r\n}\r\n\r\n.go-top.active {\r\n  opacity: 1;\r\n  pointer-events: all;\r\n  transform: translateY(0);\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/*-----------------------------------*\\\r\n * #MEDIA QUERIES\r\n\\*-----------------------------------*/\r\n\r\n/**\r\n * responsive for larger than 550px screen\r\n */\r\n\r\n@media (min-width: 550px) {\r\n\r\n  /**\r\n   * REUSED STYLE\r\n   */\r\n\r\n  .container {\r\n    max-width: 550px;\r\n    margin-inline: auto;\r\n  }\r\n\r\n  .section-title { max-width: 380px; }\r\n\r\n\r\n\r\n  /**\r\n   * PROJECT\r\n   */\r\n\r\n  .project-list {\r\n    column-count: 2;\r\n    column-gap: 25px;\r\n  }\r\n\r\n  .project-list > li:first-child { column-span: all; }\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/**\r\n * responsive for larger than 768px screen\r\n */\r\n\r\n@media (min-width: 768px) {\r\n\r\n  /**\r\n   * REUSED STYLE\r\n   */\r\n\r\n  .container { max-width: 720px; }\r\n\r\n  .section-title { max-width: 430px; }\r\n\r\n\r\n\r\n  /**\r\n   * STATS\r\n   */\r\n\r\n  .stats-list { grid-template-columns: 1fr 1fr; }\r\n\r\n\r\n\r\n  /**\r\n   * ABOUT\r\n   */\r\n\r\n  .btn-group {\r\n    display: flex;\r\n    justify-content: flex-start;\r\n    align-items: center;\r\n    gap: 20px;\r\n  }\r\n\r\n  .about .btn { max-width: max-content; }\r\n\r\n  .about .btn-secondary { margin-bottom: 0; }\r\n\r\n\r\n\r\n  /**\r\n   * CONTACT\r\n   */\r\n\r\n  .contact-form {\r\n    max-width: 450px;\r\n    margin-inline: auto;\r\n  }\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/**\r\n * responsive for larger than 992px screen\r\n */\r\n\r\n@media (min-width: 992px) {\r\n\r\n  /**\r\n   * CUSTOM PROPERTY\r\n   */\r\n\r\n  :root {\r\n\r\n    /**\r\n     * typography\r\n     */\r\n\r\n    --fs-2: 3rem;\r\n\r\n    /**\r\n     * spacing\r\n     */\r\n\r\n    --section-padding: 100px;\r\n\r\n  }\r\n\r\n\r\n\r\n  /**\r\n   * REUSED STYLE\r\n   */\r\n\r\n  .container { max-width: 980px; }\r\n\r\n  .section-content {\r\n    position: relative;\r\n    padding-left: 40px;\r\n  }\r\n\r\n  .section-subtitle {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    transform: rotate(0.75turn) translateX(-100%);\r\n    transform-origin: left top;\r\n    margin-bottom: 0;\r\n  }\r\n\r\n  .section-subtitle::after {\r\n    top: 8px;\r\n    left: auto;\r\n    right: calc(100% + 20px);\r\n  }\r\n\r\n\r\n\r\n  /**\r\n   * HEADER\r\n   */\r\n\r\n  .header { padding-block: 30px; }\r\n\r\n  .header.active { padding-block: 15px; }\r\n\r\n  .navbar-actions {\r\n    order: 1;\r\n    margin-left: 0;\r\n  }\r\n\r\n  .nav-toggle-btn { display: none; }\r\n\r\n  .navbar { all: unset; }\r\n\r\n  .navbar-link {\r\n    transform: translateY(0);\r\n    font-size: unset;\r\n    padding-inline: 5px;\r\n  }\r\n\r\n  .navbar-list > li {\r\n    margin: 0;\r\n    padding: 0;\r\n    overflow: visible;\r\n  }\r\n\r\n  .navbar-list {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    gap: 20px;\r\n  }\r\n\r\n  .navbar-link::before { height: 2px; }\r\n\r\n\r\n\r\n  /**\r\n   * HERO\r\n   */\r\n\r\n  .hero {\r\n    position: relative;\r\n    padding-top: 0;\r\n    height: 100vh;\r\n  }\r\n\r\n  .hero-banner {\r\n    max-width: unset;\r\n    height: 100%;\r\n    margin-bottom: 0;\r\n  }\r\n\r\n  .hero img {\r\n    height: 100%;\r\n    width: auto;\r\n    margin-inline: auto;\r\n  }\r\n\r\n  .hero-content {\r\n    --color-primary: var(--white);\r\n\r\n    position: absolute;\r\n    top: 50%;\r\n    filter: drop-shadow(2px 4px 10px var(--black));\r\n  }\r\n\r\n  .hero .btn-primary:is(:hover, :focus) { color: hsl(0, 0%, 12%); }\r\n\r\n  .hero-social-list {\r\n    display: block;\r\n    position: absolute;\r\n    bottom: 92px;\r\n    left: -30px;\r\n  }\r\n\r\n  .hero-social-list::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    bottom: -40px;\r\n    left: 13px;\r\n    width: 2px;\r\n    height: 30px;\r\n    background: var(--color-secondary);\r\n  }\r\n\r\n  .hero-social-link {\r\n    position: relative;\r\n    color: var(--color-secondary);\r\n    margin-block: 5px;\r\n    padding: 5px;\r\n    font-size: 18px;\r\n    transition: var(--transition-1);\r\n  }\r\n\r\n  .hero-social-link:is(:hover, :focus) { color: var(--color-primary); }\r\n\r\n  .hero-social-link .tooltip {\r\n    --trans-x: 10px;\r\n\r\n    left: calc(100% + 10px);\r\n    top: 50%;\r\n    transform: translateY(-50%) translateX(var(--trans-x));\r\n  }\r\n\r\n  .hero-social-link:is(:hover, :focus) .tooltip {\r\n    --trans-x: 0;\r\n    opacity: 1;\r\n  }\r\n\r\n  .scroll-down {\r\n    display: block;\r\n    position: absolute;\r\n    bottom: 80px;\r\n    right: -30px;\r\n    color: var(--color-secondary);\r\n    font-size: 1.125rem;\r\n    text-transform: uppercase;\r\n    transform: rotate(90deg);\r\n    transform-origin: top right;\r\n  }\r\n\r\n  .scroll-down::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 8px;\r\n    right: -50px;\r\n    width: 30px;\r\n    height: 2px;\r\n    background: var(--color-secondary);\r\n  }\r\n\r\n\r\n\r\n  /**\r\n   * STATS\r\n   */\r\n\r\n  .stats-list { grid-template-columns: repeat(3, 1fr); }\r\n\r\n  .stats-card { height: 100%; }\r\n\r\n\r\n\r\n\r\n  /**\r\n   * ABOUT\r\n   */\r\n\r\n  .about {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    align-items: center;\r\n    gap: 30px;\r\n  }\r\n\r\n  .about-banner { margin-bottom: 0; }\r\n\r\n\r\n\r\n\r\n  /**\r\n   * SKILLS\r\n   */\r\n\r\n  .skills {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    align-items: center;\r\n    gap: 50px;\r\n  }\r\n\r\n  .skills-content { margin-bottom: 0; }\r\n\r\n  .skills-toggle { margin-inline: 0; }\r\n\r\n\r\n\r\n  /**\r\n   * PROJECT\r\n   */\r\n\r\n  .project-list { column-count: 3; }\r\n\r\n  .project-list > li:first-child {\r\n    column-span: unset;\r\n    margin: 25px;\r\n    margin-left: 0;\r\n  }\r\n\r\n\r\n\r\n  /**\r\n   * CONTACT\r\n   */\r\n\r\n  .contact {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    gap: 30px;\r\n  }\r\n\r\n  .contact-content { margin-bottom: 0; }\r\n\r\n  .contact-form { width: 100%; }\r\n\r\n  .contact-list { margin-left: -40px; }\r\n\r\n\r\n\r\n  /**\r\n   * FOOTER\r\n   */\r\n\r\n  .footer .container {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n  }\r\n\r\n  .footer .logo { margin-bottom: 0; }\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/**\r\n * responsive for larger than 1200px screen\r\n */\r\n\r\n@media (min-width: 1200px) {\r\n\r\n  /**\r\n   * REUSED STYLE\r\n   */\r\n\r\n  .container { max-width: 1150px; }\r\n\r\n  .section-title { max-width: 460px; }\r\n\r\n\r\n\r\n\r\n  /**\r\n   * HERO\r\n   */\r\n\r\n  .hero-social-list { left: -80px; }\r\n\r\n  .scroll-down { right: -80px; }\r\n\r\n\r\n\r\n\r\n  /**\r\n   * ABOUT\r\n   */\r\n\r\n  .about-banner { max-width: 450px; }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/css/style.css b/assets/css/style.css
+--- a/assets/css/style.css	(revision acdbbbce8e548f54f5f23cdcc75d551b1df08fc4)
++++ b/assets/css/style.css	(date 1681336430397)
+@@ -1,19 +1,3 @@
+-/*-----------------------------------*\
+- * style.css
+-\*-----------------------------------*/
+-
+-/**
+- * copyright 2022 codewithsadee
+- */
+-
+-
+-
+-
+-
+-/*-----------------------------------*\
+- * #CUSTOM PROPERTY
+-\*-----------------------------------*/
+-
+ :root {
+ 
+   /**
+@@ -457,12 +441,12 @@
+ 
+ 
+ /*-----------------------------------*\
+- * #HERO
++ * #Patrick Roraff
+ \*-----------------------------------*/
+ 
+ main { overflow-x: hidden; }
+ 
+-.hero {
++.patrickroraff {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+@@ -472,22 +456,22 @@
+   margin-bottom: var(--section-padding);
+ }
+ 
+-.hero-banner {
++.patrickroraff-banner {
+   max-width: 500px;
+   width: 125%;
+   margin-bottom: 30px;
+ }
+ 
+-:is(.hero-social-list, .scroll-down) { display: none; }
++:is(.patrickroraff-social-list, .scroll-down) { display: none; }
+ 
+-.hero-content { max-width: 450px; }
++.patrickroraff-content { max-width: 450px; }
+ 
+-.hero-title {
++.patrickroraff-title {
+   text-align: center;
+   margin-bottom: 30px;
+ }
+ 
+-.hero .btn-primary { margin-inline: auto; }
++.patrickroraff .btn-primary { margin-inline: auto; }
+ 
+ 
+ 
+@@ -1114,25 +1098,25 @@
+    * HERO
+    */
+ 
+-  .hero {
++  .patrickroraff {
+     position: relative;
+     padding-top: 0;
+     height: 100vh;
+   }
+ 
+-  .hero-banner {
++  .patrickroraff-banner {
+     max-width: unset;
+     height: 100%;
+     margin-bottom: 0;
+   }
+ 
+-  .hero img {
++  .patrickroraff img {
+     height: 100%;
+     width: auto;
+     margin-inline: auto;
+   }
+ 
+-  .hero-content {
++  .patrickroraff-content {
+     --color-primary: var(--white);
+ 
+     position: absolute;
+@@ -1140,16 +1124,16 @@
+     filter: drop-shadow(2px 4px 10px var(--black));
+   }
+ 
+-  .hero .btn-primary:is(:hover, :focus) { color: hsl(0, 0%, 12%); }
++  .patrickroraff .btn-primary:is(:hover, :focus) { color: hsl(0, 0%, 12%); }
+ 
+-  .hero-social-list {
++  .patrickroraff-social-list {
+     display: block;
+     position: absolute;
+     bottom: 92px;
+     left: -30px;
+   }
+ 
+-  .hero-social-list::after {
++  .patrickroraff-social-list::after {
+     content: "";
+     position: absolute;
+     bottom: -40px;
+@@ -1159,7 +1143,7 @@
+     background: var(--color-secondary);
+   }
+ 
+-  .hero-social-link {
++  .patrickroraff-social-link {
+     position: relative;
+     color: var(--color-secondary);
+     margin-block: 5px;
+@@ -1168,9 +1152,9 @@
+     transition: var(--transition-1);
+   }
+ 
+-  .hero-social-link:is(:hover, :focus) { color: var(--color-primary); }
++  .patrickroraff-social-link:is(:hover, :focus) { color: var(--color-primary); }
+ 
+-  .hero-social-link .tooltip {
++  .patrickroraff-social-link .tooltip {
+     --trans-x: 10px;
+ 
+     left: calc(100% + 10px);
+@@ -1178,7 +1162,7 @@
+     transform: translateY(-50%) translateX(var(--trans-x));
+   }
+ 
+-  .hero-social-link:is(:hover, :focus) .tooltip {
++  .patrickroraff-social-link:is(:hover, :focus) .tooltip {
+     --trans-x: 0;
+     opacity: 1;
+   }
+Index: favicon.svg
+===================================================================
+diff --git a/favicon.svg b/favicon.svg
+deleted file mode 100644
+--- a/favicon.svg	(revision acdbbbce8e548f54f5f23cdcc75d551b1df08fc4)
++++ /dev/null	(revision acdbbbce8e548f54f5f23cdcc75d551b1df08fc4)
+@@ -1,12 +0,0 @@
+-<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<g clip-path="url(#clip0_71_50)">
+-<rect width="100" height="100" rx="10" fill="white"/>
+-<path d="M13.7806 72.55C17.7406 72.55 20.7839 72.44 22.9106 72.22C25.0372 72 26.5772 71.45 27.5306 70.57C28.5572 69.6167 29.1439 68.26 29.2906 66.5C29.4372 64.1533 29.5106 61.7333 29.5106 59.24V12.82H51.5106V51.76C51.5106 58.8 51.4006 64.19 51.1806 67.93C50.9606 71.67 50.4839 74.7867 49.7506 77.28C48.9439 79.9933 47.7339 82.12 46.1206 83.66C44.5806 85.1267 42.4172 86.2267 39.6306 86.96C37.0639 87.62 33.8372 88.06 29.9506 88.28C26.1372 88.4267 20.7472 88.5 13.7806 88.5V72.55Z" fill="#1F1F1F"/>
+-<path d="M65.3491 70.57H87.5691V88.5H65.3491V70.57Z" fill="#E38445"/>
+-</g>
+-<defs>
+-<clipPath id="clip0_71_50">
+-<rect width="100" height="100" rx="10" fill="white"/>
+-</clipPath>
+-</defs>
+-</svg>
+Index: index.txt
+===================================================================
+diff --git a/index.txt b/index.txt
+deleted file mode 100644
+--- a/index.txt	(revision acdbbbce8e548f54f5f23cdcc75d551b1df08fc4)
++++ /dev/null	(revision acdbbbce8e548f54f5f23cdcc75d551b1df08fc4)
+@@ -1,261 +0,0 @@
+-Jack - personal portfolio
+-
+-# HEDER
+-
+-Jack.
+-
+-En
+-Ar
+-
+-aria-label = Change Theme
+-title = Change Theme
+-
+-aria-label = Toggle Menu
+-title = Toggle Menu
+-
+-Home.
+-About.
+-Skills.
+-Portfolio.
+-Contact.
+-
+-
+-
+-# HERO
+-
+-alt = A man in a blue shirt with a happy expression
+-
+-We Design & Build Creative Products
+-
+-Get in touch
+-
+-<ion-icon name="logo-facebook"></ion-icon>
+-Facebook
+-
+-<ion-icon name="logo-twitter"></ion-icon>
+-Twitter
+-
+-<ion-icon name="logo-linkedin"></ion-icon>
+-Linkedin
+-
+-Scroll
+-
+-
+-
+-# STATS
+-
+-alt = Badge icon
+-
+-12+
+-Years of Experience
+-
+-<ion-icon name="chevron-forward-outline"></ion-icon>
+-
+-alt = Checkmark icon
+-
+-230+
+-Completed Projects
+-
+-alt = Peoples rating icon
+-
+-95+
+-Happy Clients
+-
+-
+-
+-# ABOUT
+-
+-alt = A man in a alice blue shirt with a thinking expression
+-
+-About me
+-
+-Need a Creative Product? I can Help You!
+-
+-Hi! I’m Jack Reacher, and I’m a developer who has passion for building clean web applications with intuitive functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.
+-
+-Hire me
+-
+-Download cv
+-
+-
+-
+-# SKILLS
+-
+-My skills
+-
+-What My Programming Skills Included?
+-
+-I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.
+-
+-Skills
+-Tools
+-
+-HTML5
+-alt = HTML5 logo
+-
+-CSS3
+-alt = CSS3 logo
+-
+-JavaScript
+-alt = JavaScript logo
+-
+-TypeScript
+-alt = TypeScript logo
+-
+-jQuery
+-alt = jQuery logo
+-
+-Bootstrap
+-alt = Bootstrap logo
+-
+-Angular
+-alt = Angular logo
+-
+-React
+-alt = React logo
+-
+-Vue
+-alt = Vue logo
+-
+-Firebase
+-alt = Firebase logo
+-
+-PugJs
+-alt = PugJs logo
+-
+-SASS
+-alt = SASS logo
+-
+-
+-Ajax
+-alt = Ajax logo
+-
+-Gulp
+-alt = Gulp logo
+-
+-Webpack
+-alt = Webpack logo
+-
+-Git
+-alt = Git logo
+-
+-Npm
+-alt = Npm logo
+-
+-Command Line
+-alt = Command Line logo
+-
+-VS Code
+-alt = VS Code logo
+-
+-Trello
+-alt = Trello logo
+-
+-ClickUp
+-alt = ClickUp logo
+-
+-Slack
+-alt = Slack logo
+-
+-Photoshop
+-alt = Photoshop logo
+-
+-Adobe XD
+-alt = Adobe XD logo
+-
+-
+-
+-# WOKRS
+-
+-My Works
+-
+-See My Works Which Will Amaze You!
+-
+-We develop the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.
+-
+-alt = A macintosh on a yellow background.
+-Lorem Ipsum Dolor 01
+-April 2022
+-
+-alt = On a Blue background, a Wacom and a mouse.
+-Lorem Ipsum Dolor 02
+-
+-alt = A Cassette tape on a mellow apricot background.
+-Lorem Ipsum Dolor 03
+-
+-alt = Blue digital watch on a dark liver background.
+-Lorem Ipsum Dolor 04
+-
+-alt = On a dark liver background, Airport luggage car carrying a luggage.
+-Lorem Ipsum Dolor 05
+-
+-alt = On a yellow background, a digital watch and a glass.
+-Lorem Ipsum Dolor 06
+-
+-alt = A fujifilm instant camera on a dark electric blue background.
+-Lorem Ipsum Dolor 07
+-
+-Load more work
+-
+-
+-
+-# CONTACT
+-
+-Contact
+-
+-Have You Any Project? Please Drop a Message
+-
+-Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+-
+-<ion-icon name="location-outline"></ion-icon>
+-Address:
+-941 Saqrqorish Road, alandalos, grnata, wa 47122-4194
+-
+-<ion-icon name="call-outline"></ion-icon>
+-Phone:
+-(01) 234 567 789
+-(09) 765 432 200
+-
+-<ion-icon name="mail-outline"></ion-icon>
+-Email:
+-info@jack.com
+-support@jack.com
+-
+-<ion-icon name="logo-facebook"></ion-icon>
+-<ion-icon name="logo-twitter"></ion-icon>
+-<ion-icon name="logo-linkedin"></ion-icon>
+-<ion-icon name="logo-youtube"></ion-icon>
+-
+-Name
+-<ion-icon name="person-circle"></ion-icon>
+-placeholder = e.g John Doe
+-
+-Email
+-<ion-icon name="mail"></ion-icon>
+-placeholder = e.g johndoe@mail.com
+-
+-Phone
+-<ion-icon name="call"></ion-icon>
+-placeholder = Phone Number
+-
+-Message
+-<ion-icon name="chatbubbles"></ion-icon>
+-placeholder = Write message...
+-
+-Send
+-
+-
+-
+-# FOOTER
+-
+-Jack.
+-
+-&copy; 2022 codewithsadee. All rights reserved
+-
+-
+-
+-# GO TO TOP
+-
+-title = Go to Top
+-
+-<ion-icon name="arrow-up"></ion-icon>
+\ No newline at end of file
+diff --git a/assets/images/ncaa-1.svg b/assets/images/ncaa-1.svg
+deleted file mode 100644
